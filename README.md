@@ -6,7 +6,7 @@ Create a Twitter copy by servlet api:
 - logOut,
 - Admin Role (Can make users admins and get approval for posts)
 - User, Role, Post, Comments, Likes, Publishing data e.t.c
-Add Bootstrap elements for UI 
-Add JSTL tags for statement logic 
+-Add Bootstrap elements for UI 
+-Add JSTL tags for statement logic 
 
 
