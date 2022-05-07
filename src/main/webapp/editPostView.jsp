@@ -23,7 +23,7 @@
                             ${requestScope.text}
                         </textarea>
 
-                    <button type="submit" class="btn btn-primary mt-2 pr-3">Edit post</button>
+                    <button type="submit" class="btn btn-primary mt-2 pr-3">Redact post</button>
                     <button class="btn btn-secondary mt-2 pr-3" type="button" onClick='location.href="/post"'>Cancel</button>
                 </div>
             </form>

@@ -14,11 +14,11 @@
 
     <div class="row col-6">
         <div class="col mt-3">
-            <form action="/post" method="post" class="border border-light">
-                <div class="form-floating my-3 px-3">
-                        <textarea class="form-control" name="text" placeholder="Leave a text here"
-                                  id="floatingTextarea2" style="height: 100px">
-                        </textarea>
+            <form action="/post" method="post">
+                <div class="form-floating mt-3 h-50">
+                    <textarea class="form-control h-100" name="text"
+                    id="floatingTextarea" maxlength="2048" required style="resize: none">${requestScope.text}</textarea>
+                    <label for="floatingTextarea">You can change everything!</label>
                     <button type="submit" class="btn btn-primary mt-2 pr-3">Add new post</button>
                 </div>
             </form>
@@ -40,8 +40,6 @@
                     <a class="dropdown-item" href="/postHistory">Get all posts</a>
                 </div>
             </div>
-
-
 
 
             <c:set var="result" value="${requestScope.noPosts}"/>
@@ -90,7 +88,7 @@
                                     <form action="/post/editPost" method="get">
                                         <input type="text" name="idPost" value=${post.idPost} hidden>
                                         <button type="submit" name="buttonEdit"
-                                                class="btn btn-outline-success mt-2 pr-3" >
+                                                class="btn btn-outline-success mt-2 pr-3">
                                             Edit post
                                         </button>
                                     </form>
@@ -98,7 +96,7 @@
                                     <form action="/post/deletePost" method="post">
                                         <input type="text" name="idPost" value=${post.idPost} hidden>
                                         <button type="submit" name="buttonDelete"
-                                                class="btn btn-outline-danger mt-2 pr-3" >
+                                                class="btn btn-outline-danger mt-2 pr-3">
                                             Delete post
                                         </button>
                                     </form>
