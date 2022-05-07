@@ -1,10 +1,12 @@
-# Switter_with_posts
-
-Создать форму авторизации и регистрации с помощью JSP.
-
-
-Доработать меню, чтобы неавтоизированные пользователи не могли открывать страницу Постов (должна быть неактивна).
-<br>
-Выводить history с форматированной датой (когда операция была сделана).
+## Switter
+Create a Twitter copy by servlet api: 
+- Registration,
+- Authorization,
+- Filter for non-authorized users,
+- logOut,
+- Admin Role (Can make users admins and get approval for posts)
+- User, Role, Post, Comments, Likes, Publishing data e.t.c
+Add Bootstrap elements for UI 
+Add JSTL tags for statement logic 
 
 
